@@ -15,4 +15,5 @@ https://github.com/vuejs/language-tools/issues/1153#issuecomment-1761731606
 
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#using-tsconfigjson-or-jsconfigjson
 >When input files are specified on the command line, tsconfig.json files are ignored.
+
 ということでした。
