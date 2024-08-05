@@ -10,7 +10,8 @@
     "msw": "^2.3.5",
     "ts-jest": "^29.2.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "whatwg-fetch": "^3.6.20"
   },
   "dependencies": {
     "react": "^18.3.1"
