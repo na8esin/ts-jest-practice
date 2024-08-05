@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 
 it('hello', () => {
   const aRequest = new Request("https://www.mozilla.org/favicon.ico");
