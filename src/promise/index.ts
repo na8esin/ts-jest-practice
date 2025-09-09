@@ -2,7 +2,7 @@ export function sample() {
   const myPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("foo");
-    }, 300);
+    }, 100);
   });
 
   myPromise.then((value) => {

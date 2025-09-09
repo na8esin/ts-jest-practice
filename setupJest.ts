@@ -1,7 +1,9 @@
 // https://github.com/jsdom/jsdom/issues/1724
-import 'whatwg-fetch';
+import "whatwg-fetch";
 
-process.on('unhandledRejection', (err) => {
+import process from "node:process";
+
+process.on("unhandledRejection", (reason, promise) => {
   // ここでエラーを握りつぶす
   // 各testの上部とかで、個別に無効、有効を切り替えたいが、それは無理そう
 
