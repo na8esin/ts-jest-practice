@@ -1,17 +1,21 @@
-import { sample } from "./index";
+import { sampleComponent } from "./index";
 import { setTimeout } from 'timers/promises';
 
-it("foo", async () => {
-  // sampleがPromiseを返すわけじゃないので、↓だとエラーが補足できない
-  // await expect(sample()).rejects.toThrow("bar");
-
+it("test1", async () => {
+  // ↓エラーは補足できない
   try {
-    sample();
+    sampleComponent();
   } catch (e) {
+    console.log("catch", e);
   }
 
   // ↓React Testing Library でfindByText()などを使うイメージ
   await setTimeout(200);
 
   expect(true).toBe(true);
+});
+
+it("test2", async () => {
+  // sampleがPromiseを返すわけじゃないので、↓でも補足できない
+  await expect(sampleComponent()).rejects.toThrow("bar");
 });
